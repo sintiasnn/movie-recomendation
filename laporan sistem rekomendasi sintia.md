@@ -50,7 +50,14 @@ tahap eksplorasi dilakukan untuk memahami variable serta menemukan korelasi anta
 
 **Movies Variable**
 
+ ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/001.jpg?raw=true)
+  ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/002.jpg?raw=true)
+  
+Berdasarkan hasil diatas, terdapat 9742 entri. terdapat dua variable diantaranya, movieId, title, dan genres.
 
+- MovieId merupakan ID film,
+- title merupakan judul film, dan
+- genres merupakan jenis/gaya film.
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
