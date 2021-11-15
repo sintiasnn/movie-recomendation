@@ -59,12 +59,45 @@ Berdasarkan hasil diatas, terdapat 9742 entri. terdapat dua variable diantaranya
 - title merupakan judul film, dan
 - genres merupakan jenis/gaya film.
 
-## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+**Links Variable**
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+ ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/003.jpg?raw=true)
+  ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/004.jpg?raw=true)
+
+Berdasarkan info diatas, terdapat 9742 entri pada imdbId dan 9734 untuk tmdbId. Terdapat beberapa variable diantaranya :
+
+- movieId untuk ID film,
+- imdbId untuk ID imdb (internet movie database), dan
+- tmdbId untuk ID tmdb (the movie database).
+
+**Ratings Variable**
+ ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/005.jpg?raw=true)
+  ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/006.jpg?raw=true)
+  
+Berdasarkan info diatas, terdapat 100836 entri data. Terdapat beberapa variable diantaranya
+
+- userId untuk ID pengguna,
+- movieId untuk ID film,
+- rating untuk penilaian film yang secara umum rentang nilainya dari 0 hingga 5,
+- Timestamp merupakan waktu default UTC yang terhitung sejak 1 januari 1970
+
+Kita dapat check nilai minimun pada data rating dengan fungsi *describe()*
+![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/009.jpg?raw=true)
+Hasilnya, rating terendah yaitu 0 dan rating tertinggi yaitu 5.
+
+**Tags Variable**
+ ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/007.jpg?raw=true)
+  ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/008.jpg?raw=true)
+  
+Berdasarkan informasi diatas, terdapat 3683 entri data. Terdapat beberapa variabel yang digunakan, diantaranya :
+
+- userId untuk ID user,
+- movieId untuk Id film,
+- tag untuk kata kunci yang disisipkan untuk pencarian film,
+- timestamp untuk waktu default UTC yang terhitung sejak 1 januari 1970.
+
+## Data Preparation
+Data preparation bertujuan untuk menyiapkan data sebelum masuk ke proses modeling. Selain itu, data preparation juga berguna untuk meningkatkan akurasi saat training data. Pada dataset ini, yang akan kita lakukan yaitu menggabungkan dataset dengan fungsi merge() dan key movieId, menghapus missing value serta menurut dataset berdasarkan movieId serta menghapus hasil duplikat.
 
 ## Modeling
 Tahapan ini membahas mengenai model sisten rekomendasi yang Anda buat untuk menyelesaikan permasalahan. Sajikan top-N recommendation sebagai output.
