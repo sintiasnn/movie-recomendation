@@ -14,8 +14,7 @@ Film menjadi salah satu hiburan yang tidak terkalahkan. Seiring perkembangan jam
 
 - Menghasilkan sejumlah rekomendasi film yang sesuai dengan preferensi pengguna dan belum pernah ditonton sebelumnya dengan teknik collaborative filtering.
 
-
-    ### Solution statements
+### Solution statements
 pada kasus ini, kami mengajukan metode collaborative filtering sebagai solusi permasalahan diatas.
 
 - **collaborative filtering**\
