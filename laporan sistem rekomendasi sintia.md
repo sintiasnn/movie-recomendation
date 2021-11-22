@@ -21,7 +21,7 @@ pada kasus ini, kami mengajukan metode collaborative filtering sebagai solusi pe
 collaborative filtering merupakan teknik penyeleksian pada sistem rekomendasi yang memanfaatkan kesamaan antara pengguna dan item secara bersamaan untuk memberi rekomendasi. Collaborative filtering terdiri dari dua kategori, yaitu: model based (metode berbasis model machine learning) dan memory based (metode berbasis memori).
 
 ## Data Understanding
-Data yang digunakan untuk projek kali ini yaitu movie lens small latest dataset yang diunduh dari kaggle. (https://www.kaggle.com/shubhammehta21/movie-lens-small-latest-dataset).
+Data yang digunakan untuk projek kali ini yaitu movie lens small latest dataset yang diunduh dari [kaggle](https://www.kaggle.com/shubhammehta21/movie-lens-small-latest-dataset).
 
 file yang terdapat pada dataset diatas adalah sebagai berikut:
 
@@ -38,14 +38,13 @@ Exploratory Data Analysis (EDA) merupakan proses pengenalan data untuk menganali
 
 **Unvariate EDA** 
 
-Pada data loading, telah dideklarasikan variabel yang akan dipakai. Variable tersebut diantaranya :
-
+Pada data loading, terdapat variable yang akan digunakan, diantaranya :
 - movies : informasi tentang film.
 - links : informasi yang digunakan untuk menautkan film ke sumber lainnya. 
 - ratings : penilaian pada film.
 - tags : informasi (metadata) yang dibuat tentang film tersebut. 
 
-tahap eksplorasi dilakukan untuk memahami variable serta menemukan korelasi antar variable. 
+Tahap EDA dilakukan untuk memahami variable serta menemukan korelasi antar variable. 
 
 **Movies Variable**
 
@@ -102,11 +101,12 @@ Berdasarkan informasi diatas, terdapat 3683 entri data. Terdapat beberapa variab
 ## Data Preparation
 Data preparation bertujuan untuk menyiapkan data sebelum masuk ke proses modeling. Selain itu, data preparation juga berguna untuk meningkatkan akurasi saat training data. Pada dataset ini, yang akan kita lakukan yaitu menggabungkan dataset dengan fungsi merge() dan key movieId, menghapus missing value serta menurut dataset berdasarkan movieId serta menghapus hasil duplikat.
 
-Menggabungkan dataset dengan key movieId.
-
+1. Menggabungkan bagian-bagian dataset dengan key movieId\
+Tujuan penggabungan dataset agar meminimalisir terjadinya missing value. Penggabungan dataset menggunakan key movieId dengan perintah *pd.merge()*
   ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/011.jpg?raw=true)
   
-Melihat jumlah missing value. 
+2. Melihat jumlah missing value\
+Missing Value menjadi penyebab berkurangnya akurasi pada saat proses training. Untuk mengetahui jumlah missing value dari masing-masing variable kita dapat menggunakan fungsi *isnull().sum()*. Hasilnya tidak terdapat missing value pada masing-masing variable. 
 
   ![hasil info](https://github.com/sintiasnn/movie-recomendation/blob/main/012.jpg?raw=true)
   
