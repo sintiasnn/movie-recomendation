@@ -8,17 +8,14 @@ Film menjadi salah satu hiburan yang tidak terkalahkan. Seiring perkembangan jam
 
 ### Problem Statements
 
-- Bagaimana layanan streaming dapat merekomendasikan film lain yang mungkin disukai dan belum pernah ditonton oleh penikmat film?
+Bagaimana layanan streaming dapat merekomendasikan film lain yang mungkin disukai dan belum pernah ditonton oleh penikmat film?
 
 ### Goals
 
-- Menghasilkan sejumlah rekomendasi film yang sesuai dengan preferensi pengguna dan belum pernah ditonton sebelumnya dengan teknik collaborative filtering.
+Menghasilkan sejumlah rekomendasi film yang sesuai dengan preferensi pengguna dan belum pernah ditonton sebelumnya dengan teknik collaborative filtering.
 
-### Solution statements
-pada kasus ini, kami mengajukan metode collaborative filtering sebagai solusi permasalahan diatas.
-
-- **collaborative filtering**\
-collaborative filtering merupakan teknik penyeleksian pada sistem rekomendasi yang memanfaatkan kesamaan antara pengguna dan item secara bersamaan untuk memberi rekomendasi. Collaborative filtering terdiri dari dua kategori, yaitu: model based (metode berbasis model machine learning) dan memory based (metode berbasis memori).
+### Solution Approach
+pada kasus ini, kami mengajukan metode collaborative filtering sebagai solusi permasalahan diatas. Collaborative filtering merupakan teknik penyeleksian pada sistem rekomendasi yang memanfaatkan kesamaan antara pengguna dan item secara bersamaan untuk memberi rekomendasi. Collaborative filtering terdiri dari dua kategori, yaitu: model based (metode berbasis model machine learning) dan memory based (metode berbasis memori).
 
 ## Data Understanding
 Data yang digunakan untuk projek kali ini yaitu movie lens small latest dataset yang diunduh dari [kaggle](https://www.kaggle.com/shubhammehta21/movie-lens-small-latest-dataset).
